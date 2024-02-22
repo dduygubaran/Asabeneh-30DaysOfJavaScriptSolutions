@@ -158,5 +158,169 @@ console.log(findMax(-7, -10, -9))
 
 // Exercises: Level 2;
 
+// 4- ) Write a function name showDateTime which shows time in this format: 08/01/2020 04:08 using the Date object.
+function showDateTime() {
+    let date = new Date();
+    let day = date.getDate()
+    let month = date.getMonth();
+    let year  = date.getFullYear();
+    let hour = date.getHours()
+    let minutes = date.getMinutes(); 
+    console.log(day + '/' + month+1 + '/' + year + ' ' +hour +':' + minutes )
+}
+showDateTime()
+
+// 5-) Declare a function name swapValues. This function swaps value of x to y.
+function swapValues(a,b) {
+    let x = b;
+    let y = a;
+    console.log(x+ ','+y)
+}
+swapValues(3,5)
+
+/* 6-) Declare a function name reverseArray. 
+It takes array as a parameter and it returns the reverse of the array (don't use method). */
+function reverseArray(arr) {
+    let array = []
+    for(let i=0; i<arr.length; i++ ){
+        array.unshift(arr[i])
+    }
+    console.log(array)
+}
+reverseArray([1,5,7]);
+
+/* 7-) Declare a function name capitalizeArray. 
+It takes array as a parameter and it returns the - capitalizedarray. */
+function capitalizeArray(arrX) {
+        let arrY = [];
+    for(let i=0; i<arrX.length; i++) {
+        arrY.push(arrX[i].toUpperCase())
+    }
+    console.log(arrY);
+}
+capitalizeArray(['turkiye', 'canada', 'japan']);
+
+// 8-) Declare a function name addItem. It takes an item parameter and it returns an array after adding the item
+
+function addItem(arrD) {
+    let arrB = []
+    for(let i=0; i<arrD.length; i++) {
+        arrB.push(arrD[i]);
+    }
+    console.log(arrB)
+}
+addItem(['ceren' , 100, 21, 'seç'])
+
+// 9-) Declare a function name removeItem. It takes an index parameter and it returns an array after removing an item
+function removeItem(index) {
+    let items = ['erkan', 'duygu']
+    items.splice(index,1)
+    console.log(items);
+}
+removeItem(0)
+
+// 10-14) Declare a function name sumOfNumbers. It takes a number parameter and it adds all the numbers in that range.
+function sumOfNumbers(...args) {
+    let sum = 0;
+    args.forEach(function (arg) {
+        sum += arg
+    })
+    console.log(sum)
+}
+sumOfNumbers(1,6,11,2)
+
+// 11-) Declare a function name sumOfOdds. It takes a number parameter and it adds all the odd numbers in that - range.
+function sumOfOdds(...args) {
+    let sum = 0;
+    args.forEach(function (arg) {
+        if(arg % 2== 1)
+        sum += arg
+    })
+    console.log(sum)
+}
+sumOfOdds(1,6,11,2,5)
+
+// 12-) Declare a function name sumOfEven. It takes a number parameter and it adds all the even numbers in that - range.
+function sumOfEven(...args) {
+    let sum = 0;
+    args.forEach(function (arg) {
+        if(arg % 2== 0)
+        sum += arg
+    })
+    console.log(sum)
+}
+sumOfEven(1,6,11,2,5,16)
+
+/* 13-) Declare a function name evensAndOdds .
+ It takes a positive integer as parameter and it counts number of evens and odds in the number. */
+ function evensAndOdds(number) {
+    let evenNumber = 0;
+    let oddNumber = 0;
+        for(let i=0; i<= number; i++) {
+            if(i % 2 == 0){
+                evenNumber++;
+            }else if( i % 2==1) {
+                oddNumber++;
+            }
+        }
+        console.log('Even: ' + evenNumber)
+        console.log('Odd: ' + oddNumber)
+
+}
+evensAndOdds(100)
+
+// 15-) Write a function which generates a randomUserIp.
+function randomUserIp() {
+    let abc = [];
+    for(let i=0; i<4; i++) {
+       let x  = (Math.random() * 201).toFixed();
+       abc.push(x)
+    }
+    console.log(abc)
+    console.log('IP: ' + abc.join('.'))
+}
+randomUserIp();
+
+/* 16-) Write a function which generates a randomMacAddress */
+function genMAC(){
+    var hexDigits = "0123456789ABCDEF";
+    var macAddress = "";
+    for (var i = 0; i < 6; i++) {
+        macAddress+=hexDigits.charAt(Math.round(Math.random() * 15));
+        macAddress+=hexDigits.charAt(Math.round(Math.random() * 15));   
+        if (i != 5) macAddress += ":";
+    }
+    console.log('MAC: '+ macAddress);
+}
+genMAC()
+
+/* 17-) Declare a function name randomHexaNumberGenerator.
+ When this function is called it generates a random hexadecimal number. The function return the hexadecimal number.*/
+function randomHexaNumberGenerator(){
+    let ddd = []
+    var hexDigits = "0123456789ABCDEFGHI#";
+    for (var i = 0; i < 7; i++) {
+        let x =hexDigits.charAt(Math.round(Math.random() * 15)); 
+        ddd.push(x)
+    }
+    console.log(ddd);
+    console.log('Random HexaNumber: ' + ddd.join(''))
+}
+randomHexaNumberGenerator()
+
+/* 18-) Declare a function name userIdGenerator. When this function is called it generates seven character id. 
+The function return the id.*/
+function userIdGenerator(){
+    let ddd = []
+    var idGenerator = "ABCDEFGHIJKLMNOPRSTUVYZXWQ0123456789abcdefghijklmnoprstuvyzxwq";
+    for (let i = 0; i < 7; i++) {
+        let x = idGenerator[Math.floor(Math.random() * idGenerator.length)];
+        ddd.push(x)
+    }
+    console.log(ddd);
+    console.log('User ID Generator: ' + ddd.join(''))
+}
+userIdGenerator()
+
 // Exercises: Level 3;
   
