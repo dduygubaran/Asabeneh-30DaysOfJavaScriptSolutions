@@ -1,3 +1,33 @@
+// Exercise: Level 1;
+
+//  1-) Create an empty object called dog
+let dog = {};
+
+// 2-) Print the the dog object on the console
+console.log(dog)
+
+/* 3-) Add name, legs, color, age and bark properties for the dog object. 
+The bark property is a method which return woof woof */
+dog = {
+    name: 'Karabas',
+    legs: 4,
+    color: 'white',
+    age: 3,
+    bark:  function () {
+        console.log("woof woof")
+    }
+};
+
+// 4-) Get name, legs, color, age and bark value from the dog object
+console.log(Object.values(dog))
+
+// 5-) Set new properties the dog object: breed, getDogInfo
+dog.breed ='pomeranian'
+dog.getDogInfo = function() {
+    console.log(dog.breed)
+}
+dog.getDogInfo()
+
 // Exercises: Level 2;
 
 const users = {
@@ -98,3 +128,5 @@ let countries = {
     language: 'Turkish'
 }
 console.log(` Name: ${countries.name}\n Capital: ${countries.capital}\n Populations: ${countries.populations}\n Language: ${countries.language}  `)
+
+// Exercises: Level 3
