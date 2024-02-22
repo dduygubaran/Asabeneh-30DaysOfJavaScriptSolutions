@@ -1,4 +1,3 @@
-
 // Exercises: Level 1;
 
 /* 1-) Get user input using prompt(“Enter your age:”). If user is 18 or older , give feedback:
