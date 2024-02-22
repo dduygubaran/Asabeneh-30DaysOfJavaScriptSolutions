@@ -1,4 +1,4 @@
-// // Exercises: Level 1;
+// Exercises: Level 1;
 
 const countries = ['Finland', 'Sweden', 'Denmark', 'Norway', 'IceLand']
 const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook']
@@ -185,3 +185,5 @@ function getFirstTenCountries(countries) {
     return arr; 
 }
 console.log(getFirstTenCountries(countries))
+
+// Exercises: Level 3;
