@@ -92,4 +92,3 @@ const countries1 = [
 for(const [country, capital, population, language ] of countries1) {
     console.log(`Country: ${country} Capital: ${capital} Population: ${population} Language: ${language}`)
 }
-
