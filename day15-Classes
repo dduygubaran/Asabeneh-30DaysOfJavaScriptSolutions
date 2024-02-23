@@ -1,38 +1,3 @@
-// class Person {
-//     constructor(firstName, lastName, age, country, skill) {
-//         this.firstName = firstName;
-//         this.lastName = lastName;
-//         this.age = age;
-//         this.country = country;
-//         this.skills = [];
-//     }
-
-// getInfos() {
-//     let fullName = this.firstName + this.lastName;
-//     return fullName;
-// }
-// get getAge() {
-//     return this.age;
-// }
-
-// set setSkill(skill) {
-//     this.skills.push(skill)
-// }
-// get getSkill() {
-//     return this.skills;
-// }
-// }
-// const person1 = new Person('Duygu ', 'Baran',28,'Turkiye')
-// const person2 = new Person('Deniz ', 'Akman', 34, 'Turkiye')
-// console.log(person1)
-// console.log(person2)
-
-// console.log(person1.getInfos())
-// console.log(person1.getAge)
-
-// person1.setSkill = 'Javascript'
-// console.log(person1.getSkill)
-
 // Exercises: Level 1;
 
 // 1-) Create an Animal class. The class will have name, age, color, legs properties and create different methods
