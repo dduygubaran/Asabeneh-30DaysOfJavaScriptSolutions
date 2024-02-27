@@ -106,4 +106,93 @@ console.log(words.length)
 
 // Exercise: Level 2;
 
+// 2-) First remove all the punctuations and change the string to array and count the number of words in the array
+let text =
+'I love teaching and empowering people.I teach HTML, CSS, JS, React, Python.'
+let text0 = text.split('.')
+console.log(text0)
+
+let text1 = text0[0].split(' ')
+console.log(text1) //6
+
+let text2 = text0[1].split(',')
+console.log(text2)
+
+let text3 = text2[0].split(' ') 
+console.log(text3)
+
+let total =text1.length +text2.length-1 + text3.length
+console.log(total)
+
+// 3-) In the following shopping cart add, remove, edit items
+const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
+// a-)
+let index = shoppingCart.indexOf('Meat')
+if(index === -1) {
+console.log('Meat does not exist in  array')
+shoppingCart.unshift('Meat')
+console.log('Meat is added in  array')
+console.log(shoppingCart)
+} else {
+    console.log('Meat exists in  array') 
+}
+// b-)
+let index2 = shoppingCart.indexOf('Sugar')
+if(index2 === -1) {
+    console.log('Sugar does not exist in  array')
+    shoppingCart.push('Sugar')
+    console.log('Sugar is added in  array') 
+    console.log(shoppingCart)
+} else {
+    console.log('Sugar exists in  array') 
+}
+// c-)
+let answer = prompt('Have you allergic to honey?')
+
+if(answer == 'yes') {
+    let index3 = shoppingCart.indexOf('Honey')
+    console.log(index3)
+    shoppingCart.splice(index3,1)
+    console.log(shoppingCart)
+} else {
+    console.log(shoppingCart)
+}
+// d-)
+let index4 = shoppingCart.indexOf('Tea')
+shoppingCart[index4] = 'Green Tea'
+console.log(shoppingCart)
+
+/* 4-) In countries array check
+ if 'Ethiopia' exists in the array if it exists print 'ETHIOPIA'. If it does not exist add to the countries list.*/
+let countries = ['England', 'Poland', 'Turkey', 'Ethiopia', 'Sweden', 'New Zeland']
+let isHas = countries.indexOf('Ethiopia')
+console.log(isHas)
+if(isHas === -1 ){
+    countries.push('Ethiopia')
+    console.log(countries)
+} else {
+   let h = countries[isHas].toUpperCase()
+   countries.splice(isHas,1)
+   countries.push(h)
+   console.log(countries) 
+}
+
+/* 5-) In the webTechs array check if Sass exists in the array and if it exists print 'Sass is a CSS preprocess'.
+If it does not exist add Sass to the array and print the array. */
+let webTech = ['Phyton', 'Java', 'Angular', 'JavaScript']
+let isHas1 = countries.indexOf('Sass')
+console.log(isHas1)
+if(isHas1 === -1 ){
+    webTech.push('Sass')
+    console.log(webTech)
+} else {
+   console.log('Sass is a CSS preprocess') 
+}
+
+// 6-) Concatenate the following two variables and store it in a fullStack variable.
+const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+const backEnd = ['Node','Express', 'MongoDB']
+let fullStack = frontEnd.concat(backEnd)
+console.log(fullStack)
+
 // Exercise: Level 3;

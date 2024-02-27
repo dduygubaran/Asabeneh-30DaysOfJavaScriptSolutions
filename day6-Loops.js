@@ -351,5 +351,4 @@ console.log(countries3)
 for(let i=0; i<countries3.length; i++) {
     bos.push(countries3[i].toUpperCase())
 }
-console.log(bos)
- 
+console.log(bos);
