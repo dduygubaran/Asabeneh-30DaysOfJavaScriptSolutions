@@ -86,10 +86,3 @@ async function countryNames() {
       }
 } 
 countryNames()
-
-
-
-
-  
-
-
